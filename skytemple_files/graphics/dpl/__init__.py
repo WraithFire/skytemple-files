@@ -20,7 +20,7 @@ from __future__ import annotations
 # Length of a palette in colors.
 DPL_PAL_LEN = 16
 # Maximum number of palettes
-DPL_MAX_PAL = 12
+DPL_MAX_PAL = 14
 # Number of color bytes per palette entry. Fourth is always 0x00.
 DPL_PAL_ENTRY_LEN = 4
 # Size of a single palette in bytes
