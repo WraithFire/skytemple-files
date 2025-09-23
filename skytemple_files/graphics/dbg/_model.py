@@ -41,7 +41,7 @@ from skytemple_files.graphics.dpc import DPC_TILING_DIM
 from skytemple_files.graphics.dpci._model import Dpci
 from skytemple_files.graphics.dpci import DPCI_TILE_DIM
 from skytemple_files.graphics.dpl._model import Dpl
-from skytemple_files.graphics.dpl import DPL_PAL_LEN, DPL_MAX_PAL
+from skytemple_files.graphics.dpl import DPL_PAL_LEN, DPL_MAX_PAL_BACK
 from skytemple_files.user_error import UserValueError
 
 
@@ -135,7 +135,7 @@ class Dbg(DbgProtocol[Dpc, Dpci, Dpl]):
             force_import,
         )
         # Remove any extra colors
-        palettes = palettes[:DPL_MAX_PAL]
+        palettes = palettes[:DPL_MAX_PAL_BACK]
 
         dpci.import_tiles(tiles)
 
